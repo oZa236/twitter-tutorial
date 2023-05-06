@@ -1,7 +1,12 @@
+import Header from "@/components/Header"
+import { useRouter } from "next/router"
+
 export default function Home() {
+  const router = useRouter();
+  
   return (
-    <div className="text-3xl text-sky-500">
-      Hello world
-    </div>
+    <>
+      <Header label="Home" />
+    </>
   )
 }
